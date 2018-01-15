@@ -1,0 +1,23 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color:black;
+    padding-top:20vh;
+    text-align:center;
+    color:white;
+}
+.btn{
+    background-color:white;
+    color:black;
+}
+.btn:hover{
+    opacity: 0.8;
+    background-color: white;
+}
+h4{
+    padding-bottom:8vh;
+}
+h3{
+    padding-bottom:3vh;
+}

@@ -57,7 +57,7 @@ div.hidden {
 }
 
 .project {
-    margin-top: 4.5vh;
+    margin-top: 5vh;
 }
 
 #project1 {
@@ -83,6 +83,11 @@ div.hidden {
     width: auto;
 }
 
+.projectimagemobile {
+    height: 25vh;
+    width: auto;
+}
+
 #project1image {
     width: 50%;
     height: auto;
@@ -93,40 +98,52 @@ div.hidden {
 }
 
 #project3image {
-    margin-top: 4vh;
+    margin-top: 2vh;
 }
 
-#footer{
-    margin-top:16vh;
-    margin-bottom:5vh;
+#project4image {
+    width: auto;
+    height: 30vh;
+}
+#project5image {
+    margin-left: 1.4vw;
+}
+
+#footer {
+    margin-top: 16vh;
+    margin-bottom: 5vh;
     text-align: center;
     background-color: black;
     color: white;
 }
-#footer h2{
+
+#footer h2 {
     font-family: 'Work Sans', sans-serif;
     font-size: 5vh;
     margin-bottom: 1vh;
 }
-#footer p{
+
+#footer p {
     font-family: 'Inconsolata', monospace;
     font-size: 2.5vh;
     opacity: 0.8;
     margin-top: 0;
 }
-#footer i{
-    font-size:8vh;
-} 
 
-a{
+#footer i {
+    font-size: 8vh;
+}
+
+a {
     text-decoration: none;
     color: white;
 }
-a:hover{
+
+a:hover {
     opacity: 0.8;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     #splash {
         font-size: 7.8vw;
     }
@@ -143,6 +160,28 @@ a:hover{
     }
     #projects h2 {
         font-size: 4vh;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #container {
+        width: 75%;
+        text-align: center;
+    }
+    .one.column {
+        width: 13.3333333333%;
+    }
+    .four.columns {
+        width: 13.3333333333%;
+    }
+    .seven.columns {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .project {
+        margin-right: 12vw;
     }
 }
 

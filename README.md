@@ -1,2 +1,2 @@
-# personalwebsitev3.0
-My personal website, coming soon!
+# Personal Website
+This is my personal website. See live version at www.jameslepone.com

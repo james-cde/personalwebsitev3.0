@@ -101,3 +101,63 @@ $('#project3').mouseleave(function () {
         'transition': '3s filter linear, 1s -webkit-filter linear'
     })
 });
+$('#project4').mouseenter(function () {
+    $('#project4image').css({
+        '-webkit-filter': 'grayscale(0)',
+        'filter': 'grayscale(0)',
+        'filter': 'none',
+        '-webkit-transition': '1s -webkit-filter linear',
+        '-moz-transition': '1s -moz-filter linear',
+        '-moz-transition': '1s filter linear',
+        '-ms-transition': '1s -ms-filter linear',
+        '-o-transition': '1s -o-filter linear',
+        'transition': '3s filter linear, 1s -webkit-filter linear'
+    })
+});
+$('#project4').mouseleave(function () {
+    // on mouseout, reset the background colour
+    $('#project4image').css({
+        'filter': 'grayscale(100%)',
+        '-webkit-transition': '1s -webkit-filter linear',
+        '-moz-transition': '1s -moz-filter linear',
+        '-moz-transition': '1s filter linear',
+        '-ms-transition': '1s -ms-filter linear',
+        '-o-transition': '1s -o-filter linear',
+        'transition': '3s filter linear, 1s -webkit-filter linear'
+    })
+});
+$('#project5').mouseenter(function () {
+    $('#project5image').css({
+        '-webkit-filter': 'grayscale(0)',
+        'filter': 'grayscale(0)',
+        'filter': 'none',
+        '-webkit-transition': '1s -webkit-filter linear',
+        '-moz-transition': '1s -moz-filter linear',
+        '-moz-transition': '1s filter linear',
+        '-ms-transition': '1s -ms-filter linear',
+        '-o-transition': '1s -o-filter linear',
+        'transition': '3s filter linear, 1s -webkit-filter linear'
+    })
+});
+$('#project5').mouseleave(function () {
+    // on mouseout, reset the background colour
+    $('#project5image').css({
+        'filter': 'grayscale(100%)',
+        '-webkit-transition': '1s -webkit-filter linear',
+        '-moz-transition': '1s -moz-filter linear',
+        '-moz-transition': '1s filter linear',
+        '-ms-transition': '1s -ms-filter linear',
+        '-o-transition': '1s -o-filter linear',
+        'transition': '3s filter linear, 1s -webkit-filter linear'
+    })
+});
+ $(window).resize(function() {
+  if ($(window).width() < 1200) {
+      $('.imagenonmobile').removeClass('five')
+      $('.imagenonmobile').removeClass('columns')
+  }
+ else {
+     $('.imagenonmobile').addClass('five')
+      $('.imagenonmobile').addClass('columns')
+ }
+});
