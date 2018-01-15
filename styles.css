@@ -18,18 +18,19 @@ div.hidden {
 }
 
 #splash h1 {
-    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     margin: 0;
-    padding-top: 30vh;
 }
 
 #about {
     color: white;
     padding-left: 12vw;
-    padding-top: 3vh;
+    padding-top: 6vh;
     margin-right: 20vw;
-    padding-bottom: 3vh;
     line-height: 1.4;
+    margin-bottom: 15vh;
 }
 
 #about h2 {
@@ -39,7 +40,8 @@ div.hidden {
 
 #about p {
     font-family: 'Inconsolata', monospace;
-    font-size: 3vh;
+    font-size: 2.5vh;
+    opacity: 0.8;
 }
 
 #projects {
@@ -51,35 +53,78 @@ div.hidden {
 #projects h2 {
     font-family: 'Work Sans', sans-serif;
     font-size: 5vh;
+    margin-bottom: 0;
 }
 
 .project {
-    height: 40vh
+    margin-top: 4.5vh;
+}
+
+#project1 {
+    margin-top: 3.75vh;
+
 }
 
 .project h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 3vh;
+    margin-top: 1vh;
 }
 
 .project p {
     font-family: 'Inconsolata', monospace;
-    font-size: 2.6vh;
-    line-height: 1.4;
+    font-size: 2.2vh;
+    line-height: 1.5;
+    opacity: 0.8;
 }
 
 .projectimage {
-    height: 100%;
+    height: 25vh;
     width: auto;
-    filter: grayscale(100%);
-    -webkit-transition: 1s -webkit-filter linear;
-    -moz-transition: 1s -moz-filter linear;
-    -moz-transition: 1s filter linear;
-    -ms-transition: 1s -ms-filter linear;
-    -o-transition: 1s -o-filter linear;
-    transition: 3s filter linear, 1s -webkit-filter linear;
 }
 
+#project1image {
+    width: 50%;
+    height: auto;
+}
+
+#project2image {
+    margin-left: 1.4vw;
+}
+
+#project3image {
+    margin-top: 4vh;
+}
+
+#footer{
+    margin-top:16vh;
+    margin-bottom:5vh;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+#footer h2{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 5vh;
+    margin-bottom: 1vh;
+}
+#footer p{
+    font-family: 'Inconsolata', monospace;
+    font-size: 2.5vh;
+    opacity: 0.8;
+    margin-top: 0;
+}
+#footer i{
+    font-size:8vh;
+} 
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    opacity: 0.8;
+}
 
 @media only screen and (max-width: 1000px) {
     #splash {
@@ -105,7 +150,7 @@ div.hidden {
 
 .downArrow {
     background-color: black;
-    margin-top: 40vh;
+    margin-top: 70vh;
 }
 
 #arrow {
@@ -113,9 +158,10 @@ div.hidden {
 }
 
 .bounce {
-    -moz-animation: bounce 3s infinite;
-    -webkit-animation: bounce 3s infinite;
-    animation: bounce 3s infinite;
+    -moz-animation: bounce 12s;
+    -webkit-animation: bounce 12s;
+    animation: bounce 12s;
+    animation-iteration-count: 2;
 }
 
 @-moz-keyframes bounce {
