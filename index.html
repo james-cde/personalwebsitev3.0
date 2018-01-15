@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <link rel=stylesheet href="skeleton.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat|Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="smooth-scroll-master/dist/js/smooth-scroll.js"></script>
+</head>
+
+<body>
+    <div id="splash" class="hidden">
+        <h1 id="name" class="fadeInLeft">James Lepone</h1>
+        <div class="downArrow bounce">
+            <a data-scroll href="#about"><img id="arrow" src="arrowdown.png"/></a>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="2000" id="about">
+        <h2>About</h2>
+        <p>Hello, I'm James, a developer from New Jersey, and a senior at the Bergen County Academies Academy for Technology and Computer Science. I am always trying to learn new technologies and develop projects, which range from web design to TTL computing and 3D printing.</p>
+    </div>
+    <div id="projects">
+        <div data-aos="fade-up" data-aos-duration="2000">
+            <h2>Projects</h2>
+        </div>
+        <div class="project" data-aos="fade-up" data-aos-duration="2000">
+            <div class="row">
+                <div class="seven columns">
+                    <h3>hackBCA</h3>
+                    <p>I am currently one of the directors at hackBCA, a premier high school hackathon that occurs once a year at my school. My responsibilities include the livestream, coordinating with the school tech department for internet and power, as well as getting sponsors. This year, there will be 400 High School students in attendance who will spend 24 hours creating a game, app, hardware project, or any technology oriented project.</p>
+                </div>
+                <div class="five columns">
+                    <img class="projectimage" src="images/project1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+</body>
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        // Selectors
+        ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+        header: null, // Selector for fixed headers (must be a valid CSS selector)
+
+        // Speed & Easing
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+        easing: 'easeInOutQuad', // Easing pattern to use
+        customEasing: function(time) {}, // Function. Custom easing pattern
+
+        // Callback API
+        before: function() {}, // Callback to run before scroll
+        after: function() {} // Callback to run after scroll
+    });
+    $(document).ready(function() {
+        $('div.hidden').fadeIn(2000).removeClass('hidden');
+    });
+    $('.project').mouseenter(function() {
+        $('.projectimage').css({
+            '-webkit-filter': 'grayscale(0)',
+            'filter': 'grayscale(0)',
+            'filter': 'none',
+            '-webkit-transition': '1s -webkit-filter linear',
+            '-moz-transition': '1s -moz-filter linear',
+            '-moz-transition': '1s filter linear',
+            '-ms-transition': '1s -ms-filter linear',
+            '-o-transition': '1s -o-filter linear',
+            'transition': '3s filter linear, 1s -webkit-filter linear'
+        })
+    });
+    $('.project').mouseleave(function() {
+        // on mouseout, reset the background colour
+        $('.projectimage').css({
+            'filter': 'grayscale(100%)',
+            '-webkit-transition': '1s -webkit-filter linear',
+            '-moz-transition': '1s -moz-filter linear',
+            '-moz-transition': '1s filter linear',
+            '-ms-transition': '1s -ms-filter linear',
+            '-o-transition': '1s -o-filter linear',
+            'transition': '3s filter linear, 1s -webkit-filter linear'
+        })
+    });
+</script>
+</html>

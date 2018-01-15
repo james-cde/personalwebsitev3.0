@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+div.hidden {
+    display: none
+}
+
+#splash {
+    font-family: 'Inconsolata', monospace;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    font-size: 8vh;
+}
+
+#splash h1 {
+    vertical-align: middle;
+    margin: 0;
+    padding-top: 30vh;
+}
+
+#about {
+    color: white;
+    padding-left: 12vw;
+    padding-top: 3vh;
+    margin-right: 20vw;
+    padding-bottom: 3vh;
+    line-height: 1.4;
+}
+
+#about h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 5vh;
+}
+
+#about p {
+    font-family: 'Inconsolata', monospace;
+    font-size: 3vh;
+}
+
+#projects {
+    color: white;
+    padding-bottom: 3vh;
+    padding-left: 12vw;
+}
+
+#projects h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 5vh;
+}
+
+.project {
+    height: 40vh
+}
+
+.project h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vh;
+}
+
+.project p {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2.6vh;
+    line-height: 1.4;
+}
+
+.projectimage {
+    height: 100%;
+    width: auto;
+    filter: grayscale(100%);
+    -webkit-transition: 1s -webkit-filter linear;
+    -moz-transition: 1s -moz-filter linear;
+    -moz-transition: 1s filter linear;
+    -ms-transition: 1s -ms-filter linear;
+    -o-transition: 1s -o-filter linear;
+    transition: 3s filter linear, 1s -webkit-filter linear;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #splash {
+        font-size: 7.8vw;
+    }
+    #about {
+        padding-left: 12vw;
+        margin-right: 10vw;
+    }
+    #about h2 {
+        font-size: 4vh;
+    }
+
+    #about p {
+        font-size: 2.5vh;
+    }
+    #projects h2 {
+        font-size: 4vh;
+    }
+}
+
+/*Arrow Animation*/
+
+.downArrow {
+    background-color: black;
+    margin-top: 40vh;
+}
+
+#arrow {
+    height: 4vh;
+}
+
+.bounce {
+    -moz-animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+}
+
+@-moz-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
