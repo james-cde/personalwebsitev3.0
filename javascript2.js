@@ -27,9 +27,8 @@ $(document).ready(function () {
 });
 $('#project1').mouseenter(function () {
     $('#project1image').css({
-        '-webkit-filter': 'grayscale(0)',
-        'filter': 'grayscale(0)',
-        'filter': 'none',
+        '-webkit-filter': 'grayscale(1%)',
+        'filter': 'grayscale(1%)',
         '-webkit-transition': '1s -webkit-filter linear',
         '-moz-transition': '1s -moz-filter linear',
         '-moz-transition': '1s filter linear',
@@ -53,9 +52,8 @@ $('#project1').mouseleave(function () {
 
 $('#project2').mouseenter(function () {
     $('#project2image').css({
-        '-webkit-filter': 'grayscale(0)',
-        'filter': 'grayscale(0)',
-        'filter': 'none',
+        '-webkit-filter': 'grayscale(1%)',
+        'filter': 'grayscale(1%)',
         '-webkit-transition': '1s -webkit-filter linear',
         '-moz-transition': '1s -moz-filter linear',
         '-moz-transition': '1s filter linear',
@@ -78,9 +76,8 @@ $('#project2').mouseleave(function () {
 });
 $('#project3').mouseenter(function () {
     $('#project3image').css({
-        '-webkit-filter': 'grayscale(0)',
-        'filter': 'grayscale(0)',
-        'filter': 'none',
+        '-webkit-filter': 'grayscale(1%)',
+        'filter': 'grayscale(1%)',
         '-webkit-transition': '1s -webkit-filter linear',
         '-moz-transition': '1s -moz-filter linear',
         '-moz-transition': '1s filter linear',
@@ -103,9 +100,8 @@ $('#project3').mouseleave(function () {
 });
 $('#project4').mouseenter(function () {
     $('#project4image').css({
-        '-webkit-filter': 'grayscale(0)',
-        'filter': 'grayscale(0)',
-        'filter': 'none',
+        '-webkit-filter': 'grayscale(1%)',
+        'filter': 'grayscale(1%)',
         '-webkit-transition': '1s -webkit-filter linear',
         '-moz-transition': '1s -moz-filter linear',
         '-moz-transition': '1s filter linear',
@@ -128,9 +124,8 @@ $('#project4').mouseleave(function () {
 });
 $('#project5').mouseenter(function () {
     $('#project5image').css({
-        '-webkit-filter': 'grayscale(0)',
-        'filter': 'grayscale(0)',
-        'filter': 'none',
+        '-webkit-filter': 'grayscale(1%)',
+        'filter': 'grayscale(1%)',
         '-webkit-transition': '1s -webkit-filter linear',
         '-moz-transition': '1s -moz-filter linear',
         '-moz-transition': '1s filter linear',
