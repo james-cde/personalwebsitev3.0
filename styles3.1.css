@@ -145,6 +145,11 @@ a:hover {
     opacity: 0.8;
 }
 
+#centerme {
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 1200px) {
     #splash {
         font-size: 7.8vw;
@@ -170,20 +175,30 @@ a:hover {
         width: 75%;
         text-align: center;
     }
-    .one.column {
-        width: 13.3333333333%;
-    }
-    .four.columns {
-        width: 13.3333333333%;
-    }
     .seven.columns {
         width: 75%;
+    }
+    .one.column {
+        width: 10%;
+    }
+    #desc{
+        margin-right:4%;
+        margin-left: 4%;
+    }
+}
+
+@media only screen and (max-width: 770px){
+    .one.column {
+        width: 20%;
     }
 }
 
 @media only screen and (max-width: 550px) {
     .project {
         margin-right: 12vw;
+    }
+    .one.column {
+        width: 30%;
     }
 }
 
