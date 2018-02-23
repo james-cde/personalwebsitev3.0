@@ -147,6 +147,8 @@ a:hover {
 
 #centerme {
     display: flex;
+    display: -webkit-flex;
+    clear: both;
     justify-content: center;
 }
 
