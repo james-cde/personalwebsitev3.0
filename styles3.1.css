@@ -90,12 +90,11 @@ div.hidden {
 }
 
 #project1image {
-    width: 50%;
-    height: auto;
+    margin-left: 2.8vw;
 }
 
 #project2image {
-    margin-left: 1.4vw;
+    margin-left: 2.8vw;
 }
 
 #project3image {
